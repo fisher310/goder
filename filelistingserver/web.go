@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	_ "net/http/pprof"
 )
 
 type appHandler func(writer http.ResponseWriter, request *http.Request) error
