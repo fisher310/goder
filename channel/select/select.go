@@ -21,7 +21,7 @@ func generator() chan int {
 
 func worker(id int, c chan int) {
 	for n := range c {
-		time.Sleep(1 * time.Second)
+		//time.Sleep(1 * time.Second)
 		fmt.Printf("Worker %d received %d \n", id, n)
 	}
 }
@@ -39,11 +39,11 @@ func main() {
 
 	var values []int
 
-	var activeWorker chan<- int
-	var activeValue int
-
 	tm := time.After(10 * time.Second)
+	tick := time.Tick(time.Second)
 	for {
+		var activeWorker chan<- int
+		var activeValue int
 		if len(values) > 0 {
 			activeWorker = w
 			activeValue = values[0]
@@ -55,6 +55,10 @@ func main() {
 			values = append(values, n)
 		case activeWorker <- activeValue:
 			values = values[1:]
+		case <-time.After(800 * time.Millisecond):
+			fmt.Println("timeout")
+		case <-tick:
+			fmt.Println("queue len=", len(values))
 		case <-tm:
 			fmt.Println("bye")
 			return
