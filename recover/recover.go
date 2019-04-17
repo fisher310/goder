@@ -17,8 +17,6 @@ func tryRecover() {
 	panic(123)
 }
 
-func main()  {
+func main() {
 	tryRecover()
 }
-
-

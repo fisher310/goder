@@ -4,7 +4,7 @@ import "sync"
 
 type atomicInt struct {
 	value int
-	lock sync.Mutex
+	lock  sync.Mutex
 }
 
 func (a *atomicInt) increment() {
@@ -18,4 +18,3 @@ func (a *atomicInt) get() int {
 	defer a.lock.Unlock()
 	return a.value
 }
-

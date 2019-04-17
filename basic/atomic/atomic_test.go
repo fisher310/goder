@@ -14,10 +14,9 @@ func TestIncrement(t *testing.T) {
 			a.increment()
 			c <- 0
 		}(ch)
-		<- ch
+		<-ch
 		if a.get() != expected {
 			t.Errorf("expected value is %d, but the actual is %d\n", expected, a)
 		}
 	}
 }
-

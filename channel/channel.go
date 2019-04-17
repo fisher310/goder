@@ -19,14 +19,14 @@ func createWorker(id int, wg *sync.WaitGroup) worker {
 
 func doWork(id int, w worker) {
 
-	for n := range w.in  {
+	for n := range w.in {
 		fmt.Printf("worker %d received %c\n", id, n)
 		w.done()
 	}
 }
 
 type worker struct {
-	in chan int
+	in   chan int
 	done func()
 }
 
@@ -48,7 +48,6 @@ func chanDemo() {
 
 	wg.Wait()
 }
-
 
 func main() {
 	chanDemo()

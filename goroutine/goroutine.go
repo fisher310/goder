@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	for i := 0; i< 10; i++ {
+	for i := 0; i < 10; i++ {
 		go func(i int) {
 			for {
 				fmt.Printf("hello from goroutine %d\n", i)
@@ -15,5 +15,3 @@ func main() {
 	}
 	time.Sleep(time.Minute)
 }
-
-

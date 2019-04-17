@@ -112,7 +112,7 @@ func main() {
 		fmt.Println()
 	}
 
-	end := steps[len(steps) - 1][len(steps[0]) - 1]
+	end := steps[len(steps)-1][len(steps[0])-1]
 
 	fmt.Println(end)
 	//if end > 0 {

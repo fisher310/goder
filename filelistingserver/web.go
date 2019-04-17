@@ -4,8 +4,8 @@ import (
 	"github.com/fisher310/goder/filelistingserver/filelisting"
 	"log"
 	"net/http"
-	"os"
 	_ "net/http/pprof"
+	"os"
 )
 
 type appHandler func(writer http.ResponseWriter, request *http.Request) error

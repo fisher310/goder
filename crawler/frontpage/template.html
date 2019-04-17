@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <h2>共找到 {{.Hits}}个， 显示从 {{.Start}} 起共{{len .Items}} 个</h2>
+</div>
+<div>
+    <table>
+        <tbody>
+        {{range .Items}}
+        <tr>
+            <td><a href="{{.Url}}">{{.Payload.Name}}</a></td>
+            {{with .Payload}}
+            <td>{{.Gender}}</td>
+            <td>{{.Age}}</td>
+            <td>{{.Height}}</td>
+            <td>{{.Weight}}</td>
+            <td>{{.Income}}</td>
+            <td>{{.Education}}</td>
+            <td>{{.Occupation}}</td>
+            <td>{{.Hukou}}</td>
+            <td>{{.Xinzuo}}</td>
+            <td>{{.House}}</td>
+            <td>{{.Car}}</td>
+            {{end}}
+        </tr>
+        {{else}}
+        <tr>
+            <td>没有找到用户</td>
+        </tr>
+        {{end}}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
