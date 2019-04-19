@@ -1,0 +1,48 @@
+{
+  "took": 3,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 3,
+    "max_score": 1.0,
+    "hits": [
+      {
+        "_index": "imooc",
+        "_type": "course",
+        "_id": "AWoMNZxyy379tNG2YWMD",
+        "_score": 1.0,
+        "_source": {
+          "name": "golang_pipeline",
+          "instructor": "ccmouse",
+          "url": "http://www.imooc.com/lear/927"
+        }
+      },
+      {
+        "_index": "imooc",
+        "_type": "course",
+        "_id": "2",
+        "_score": 1.0,
+        "_source": {
+          "name": "interview",
+          "instructor": "ccmouse",
+          "url": "http://imocc/ccmouse/8292"
+        }
+      },
+      {
+        "_index": "imooc",
+        "_type": "course",
+        "_id": "1",
+        "_score": 1.0,
+        "_source": {
+          "name": "golang",
+          "instructor": "ccmouse"
+        }
+      }
+    ]
+  }
+}
