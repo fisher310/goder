@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c90a1200-6945-42cf-a810-3d4e09468c39" name="Default Changelist" comment="project init">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/lihailong.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distributed/persist/rpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distributed/persist/server/client_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distributed/persist/server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler_distributed/rpcsupport/rpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flag_cli.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inpractice/configuration/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inpractice/configuration/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inpractice/configuration/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inpractice/configuration/yaml_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inpractice/web/manner/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/rpc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/server/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/persist/itemsaver.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/persist/itemsaver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ls.go" beforeDir="false" afterPath="$PROJECT_DIR$/ls.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inpractice/web/router/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,14 +29,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inpractice/web/manner/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+            <state relative-caret-position="489">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding>
                 <element signature="e#14#43#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inpractice/web/router/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+              <folding>
+                <element signature="e#16#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/path/match.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/net/http/server.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="1856" column="18" selection-start-line="1856" selection-start-column="18" selection-end-line="1856" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/net/http/request.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -87,43 +111,7 @@
         <entry file="file://C:/Go/src/os/signal/signal.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inpractice/configuration/config.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/sync/atomic/value.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/os/file_windows.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3696">
-              <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/runtime/panic.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14916">
-              <caret line="682" column="23" selection-start-line="682" selection-start-column="23" selection-end-line="682" selection-end-column="23" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -160,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="restClient/response2.txt" />
         <option value="restClient/response7.txt" />
         <option value="restClient/response11.json" />
         <option value="restClient/response15.json" />
@@ -211,6 +198,7 @@
         <option value="$PROJECT_DIR$/inpractice/configuration/main.go" />
         <option value="$PROJECT_DIR$/inpractice/web/manner.go" />
         <option value="$PROJECT_DIR$/inpractice/web/manner/main.go" />
+        <option value="$PROJECT_DIR$/inpractice/web/router/main.go" />
       </list>
     </option>
   </component>
@@ -263,6 +251,13 @@
               <item name="inpractice" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="manner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goder" type="462c0819:PsiDirectoryNode" />
+              <item name="inpractice" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="goder" type="b2602c69:ProjectViewProjectNode" />
@@ -334,7 +329,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -817,12 +812,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (3)">
-    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goder" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/rpc/client/main.go" />
+      <filePath value="$PROJECT_DIR$/inpractice/web/router/main.go" />
       <package value="github.com/fisher310/goder" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -868,19 +863,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go (2)" />
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Test.TestItemSaver in github.com/fisher310/goder/crawler_distributed/persist/server" />
       <item itemvalue="Go Test.TestYaml in github.com/fisher310/goder/inpractice/configuration" />
       <item itemvalue="Go Build.go build main.go (3)" />
+      <item itemvalue="Go Build.go build main.go (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go (3)" />
         <item itemvalue="Go Test.TestYaml in github.com/fisher310/goder/inpractice/configuration" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.TestItemSaver in github.com/fisher310/goder/crawler_distributed/persist/server" />
-        <item itemvalue="Go Build.go build main.go (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -911,7 +906,7 @@
       <workItem from="1555508454308" duration="4869000" />
       <workItem from="1555584461641" duration="6330000" />
       <workItem from="1555595485391" duration="6940000" />
-      <workItem from="1555649694170" duration="3916000" />
+      <workItem from="1555649694170" duration="9160000" />
     </task>
     <servers />
   </component>
@@ -948,7 +943,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145393000" />
+    <option name="totallyTimeSpent" value="150637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -970,15 +965,15 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296582" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4950386" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4950386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43109152" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32964602" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.53421634" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3076075" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.3076075" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.3076075" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="REST Client" order="13" weight="0.53362733" />
@@ -1039,34 +1034,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crawler/zhenai/parser/profile_test_data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="548" column="28" selection-start-line="548" selection-start-column="28" selection-end-line="548" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/zhenai/parser/citylist_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/zhenai/parser/citylist.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/zhenai/parser/city.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/engine/simple.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -1361,7 +1328,7 @@
     <entry file="file://C:/Go/src/os/signal/signal.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1379,12 +1346,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Go/src/net/http/request.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/net/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="1856" column="18" selection-start-line="1856" selection-start-column="18" selection-end-line="1856" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inpractice/web/manner/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="489">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="e#14#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/path/match.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inpractice/web/router/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+          <folding>
+            <element signature="e#16#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
