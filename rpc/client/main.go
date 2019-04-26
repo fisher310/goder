@@ -26,6 +26,7 @@ func main() {
 
 	err = client.Call("DemoService.Div", rpcdemo.Args{A: 10, B: 0}, &result)
 	if err != nil {
+		// print the error
 		fmt.Println(err)
 	} else {
 		fmt.Println(result)
