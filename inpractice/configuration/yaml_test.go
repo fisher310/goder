@@ -8,7 +8,7 @@ import (
 func TestYaml(t *testing.T) {
 	config, err := yaml.ReadFile("config.yaml")
 	if err != nil {
-		t.Errorf("read the file error: %s\n", err )
+		t.Errorf("read the file error: %s\n", err)
 	}
 
 	enabled, err := config.GetBool("enabled")

@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"github.com/fisher310/goder/crawler_distributed/config"
 	"github.com/fisher310/goder/crawler_distributed/persist"
 	"github.com/fisher310/goder/crawler_distributed/rpcsupport"
 	"gopkg.in/olivere/elastic.v5"
@@ -8,12 +10,14 @@ import (
 )
 
 func main() {
-	log.Fatal(serveRpc(":1234", "dating_profile"))
+	log.Fatal(serveRpc(
+		fmt.Sprintf(":%d", config.ItemSaverPort),
+		config.ElasticIndex))
 }
 
 func serveRpc(host string, index string) error {
 
-	client, err := elastic.NewClient(elastic.SetURL("http://10.252.19.55:9200"), elastic.SetSniff(false))
+	client, err := elastic.NewClient(elastic.SetURL(config.ElasticAddress), elastic.SetSniff(false))
 	if err != nil {
 		panic(err)
 	}
