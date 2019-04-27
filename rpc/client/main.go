@@ -29,6 +29,7 @@ func main() {
 		// print the error
 		fmt.Println(err)
 	} else {
+		// add some in distribute branch
 		fmt.Println(result)
 	}
 }
