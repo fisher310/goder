@@ -30,6 +30,7 @@ func main() {
 		fmt.Println(err)
 	} else {
 		// add some in distribute branch
+		// add some in hotfix 2
 		fmt.Println(result)
 	}
 }
