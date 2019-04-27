@@ -29,6 +29,7 @@ func main() {
 		// print the error
 		fmt.Println(err)
 	} else {
+		// add in hotfix1 again
 		// add some in distribute branch
 		// add some in hotfix 2
 		fmt.Println(result)
