@@ -21,12 +21,13 @@ func main() {
 		panic(err)
 	}
 	e := engine.ConcurrentEngine{
-		Scheduler:   &scheduler.QueuedScheduler{},
-		WorkerCount: 10,
-		ItemChan:    itemChan,
+		Scheduler:        &scheduler.QueuedScheduler{},
+		WorkerCount:      10,
+		ItemChan:         itemChan,
+		RequestProcessor: engine.Worker,
 	}
 
-	e.Run(engine.Request{Url: url, ParserFunc: parser.ParseCityList})
+	e.Run(engine.Request{Url: url, Parser: engine.CreateFuncParser(parser.ParseCityList, config.ParseCityList)})
 	//e.Run(engine.Request{
 	//	Url:        cityUrl,
 	//	ParserFunc: parser.ParseCity,

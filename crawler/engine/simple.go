@@ -1,7 +1,6 @@
 package engine
 
 import (
-	"github.com/fisher310/goder/crawler/fetcher"
 	"log"
 )
 
@@ -18,7 +17,7 @@ func (SimpleEngine) Run(seeds ...Request) {
 		r := requests[0]
 		requests = requests[1:]
 
-		parseResult, err := worker(r)
+		parseResult, err := Worker(r)
 		if err != nil {
 			continue
 		}
@@ -28,15 +27,4 @@ func (SimpleEngine) Run(seeds ...Request) {
 			log.Printf("Got item %s", item)
 		}
 	}
-}
-
-func worker(r Request) (ParseResult, error) {
-	log.Printf("Fetching %s\n", r.Url)
-	body, err := fetcher.Fetch(r.Url)
-	if err != nil {
-		log.Printf("Fetcher: error fetching url %s: %v", r.Url, err)
-		return ParseResult{}, err
-	}
-
-	return r.ParserFunc(body, r.Url), nil
 }

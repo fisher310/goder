@@ -2,6 +2,7 @@ package parser
 
 import (
 	"github.com/fisher310/goder/crawler/engine"
+	"github.com/fisher310/goder/crawler_distributed/config"
 	"log"
 	"regexp"
 )
@@ -21,7 +22,7 @@ func ParseCityList(contents []byte, _ string) engine.ParseResult {
 			engine.Request{
 				Url: string(m[1]),
 				Parser: engine.CreateFuncParser(
-					ParseCity, "ParseCity",
+					ParseCity, config.ParseCity,
 				)})
 	}
 
