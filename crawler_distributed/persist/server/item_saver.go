@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"github.com/fisher310/goder/crawler_distributed/config"
 	"github.com/fisher310/goder/crawler_distributed/persist"
@@ -9,9 +10,16 @@ import (
 	"log"
 )
 
+var port = flag.Int("port", 0, "the item saver port")
+
 func main() {
+	flag.Parse()
+	if *port == 0 {
+		log.Printf("must specify a port for the item saver")
+		return
+	}
 	log.Fatal(serveRpc(
-		fmt.Sprintf(":%d", config.ItemSaverPort),
+		fmt.Sprintf(":%d", *port),
 		config.ElasticIndex))
 }
 

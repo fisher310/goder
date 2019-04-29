@@ -92,5 +92,3 @@ func deserializeParser(p SerializedParser) (engine.Parser, error) {
 		return nil, errors.New("unknown parser name " + p.Name)
 	}
 }
-
-
