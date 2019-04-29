@@ -18,16 +18,28 @@ func ParseCity(contents []byte, _ string) engine.ParseResult {
 	for _, m := range matches {
 		//result.Items = append(result.Items, "User: "+name)
 		result.Requests = append(result.Requests, engine.Request{
-			Url:        string(m[1]),
-			ParserFunc: ProfileParser(string(m[2])),
+			Url:    string(m[1]),
+			Parser: CreateProfileParser(string(m[2])),
 		})
 	}
 
 	return result
 }
 
-func ProfileParser(name string) engine.ParserFunc {
-	return func(c []byte, url string) engine.ParseResult {
-		return ParseProfile(c, name, url)
+type ProfileParser struct {
+	username string
+}
+
+func (p *ProfileParser) Parse(content []byte, url string) engine.ParseResult {
+	return ParseProfile(content, url, p.username)
+}
+
+func (p *ProfileParser) Serialize() (name string, args interface{}) {
+	return "ProfileParser", p.username
+}
+
+func CreateProfileParser(name string) *ProfileParser {
+	return &ProfileParser{
+		username: name,
 	}
 }

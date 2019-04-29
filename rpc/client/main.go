@@ -26,8 +26,12 @@ func main() {
 
 	err = client.Call("DemoService.Div", rpcdemo.Args{A: 10, B: 0}, &result)
 	if err != nil {
+		// print the error
 		fmt.Println(err)
 	} else {
+		// add in hotfix1 again
+		// add some in distribute branch
+		// add some in hotfix 2
 		fmt.Println(result)
 	}
 }

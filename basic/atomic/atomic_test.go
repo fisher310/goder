@@ -11,12 +11,13 @@ func TestIncrement(t *testing.T) {
 		a.increment()
 		ch := make(chan int)
 		go func(c chan int) {
-			a.increment()
-			c <- 0
+			c <- a.get()
 		}(ch)
 		<-ch
-		if a.get() != expected {
-			t.Errorf("expected value is %d, but the actual is %d\n", expected, a)
+		actual := a.get()
+
+		if expected != actual {
+			t.Errorf("expected value is %d, but the actual is %d\n", expected, actual)
 		}
 	}
 }

@@ -1,10 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"github.com/fisher310/goder/crawler/engine"
-	"github.com/fisher310/goder/crawler/persist"
 	"github.com/fisher310/goder/crawler/scheduler"
 	"github.com/fisher310/goder/crawler/zhenai/parser"
+	"github.com/fisher310/goder/crawler_distributed/config"
+	"github.com/fisher310/goder/crawler_distributed/persist/client"
 )
 
 const (
@@ -14,17 +16,18 @@ const (
 
 func main() {
 
-	itemChan, err := persist.ItemSaver("dating_profile")
+	itemChan, err := client.ItemSaver(fmt.Sprintf(":%d", config.ItemSaverPort))
 	if err != nil {
 		panic(err)
 	}
 	e := engine.ConcurrentEngine{
-		Scheduler:   &scheduler.QueuedScheduler{},
-		WorkerCount: 10,
-		ItemChan:    itemChan,
+		Scheduler:        &scheduler.QueuedScheduler{},
+		WorkerCount:      10,
+		ItemChan:         itemChan,
+		RequestProcessor: engine.Worker,
 	}
 
-	e.Run(engine.Request{Url: url, ParserFunc: parser.ParseCityList})
+	e.Run(engine.Request{Url: url, Parser: engine.CreateFuncParser(parser.ParseCityList, config.ParseCityList)})
 	//e.Run(engine.Request{
 	//	Url:        cityUrl,
 	//	ParserFunc: parser.ParseCity,

@@ -10,9 +10,11 @@ import (
 
 func main() {
 	pr := newPathResolver()
+
 	pr.Add("GET /hello", hello)
 	pr.Add("(GET|HEAD) /goodbye(/?[A-Za-z0-9]*)?", goodbye)
 	pr.Add("GET /", homePage)
+
 	log.Fatal(http.ListenAndServe(":8080", pr))
 }
 
